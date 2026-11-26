@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CashCaboose Capital — Move Money Forward</title>
+<meta name="description" content="CashCaboose Capital: micro-loans (Finance), bill settlement (Pay) and buy-now-pay-later essentials (Co). One platform, two portals." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ===== TOP NAV ===== -->
+<header class="nav" id="top">
+  <a class="brand" href="#top" data-view="landing">
+    <span class="brand-mark">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 10h16"/><circle cx="8.5" cy="20" r="1.6"/><circle cx="15.5" cy="20" r="1.6"/><path d="M9 7h2M13 7h2"/></svg>
+    </span>
+    <span class="brand-text">CashCaboose<em>Capital</em></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#arms">The Three Arms</a>
+    <a href="#how">How it works</a>
+    <button class="btn btn-ghost" data-goto="portal">Sign in</button>
+    <button class="btn btn-gold" data-goto="portal">Get started</button>
+  </nav>
+</header>
+
+<!-- ===== LANDING ===== -->
+<main id="view-landing">
+  <section class="hero">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="pill"><span class="dot"></span> Dual-portal platform · Customer &amp; Manager</span>
+        <h1>Move money <span class="grad">forward</span>,<br>not in circles.</h1>
+        <p class="lede">CashCaboose Capital runs three operating arms on one clean platform: <strong>Finance</strong> for micro-loans, <strong>Pay</strong> for direct bill settlement, and <strong>Co</strong> for buy-now-pay-later essentials.</p>
+        <div class="hero-cta">
+          <button class="btn btn-gold btn-lg" data-goto="portal">Open the portal</button>
+          <a class="btn btn-outline btn-lg" href="#arms">Explore the arms</a>
+        </div>
+        <div class="hero-stats">
+          <div><b data-count="12840">0</b><span>Loans disbursed</span></div>
+          <div><b data-count="9640">0</b><span>Bills settled</span></div>
+          <div><b data-count="5120">0</b><span>Essential orders</span></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hc-head"><span class="dot ok"></span> Live float snapshot</div>
+        <div class="hc-balance" id="hero-float">—</div>
+        <div class="hc-arms" id="hero-arms"></div>
+        <div class="hc-foot">Protected floats · reviewed daily</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="arms" id="arms">
+    <h2 class="sec-title">Three arms. One caboose.</h2>
+    <p class="sec-sub">Every arm shares the same ledger, the same float protection, and the same promise: no surprises.</p>
+    <div class="arm-grid">
+      <article class="arm-card" style="--ac:#f5b301">
+        <div class="arm-icon">₦</div>
+        <h3>CashCaboose <b>Finance</b></h3>
+        <p>Micro-loans from <b>₦5,000 – ₦150,000</b> with transparent flat pricing. Request, get reviewed by a manager, and track repayment in one place.</p>
+        <ul><li>Same-day review</li><li>No hidden fees</li><li>Balance &amp; schedule tracking</li></ul>
+      </article>
+      <article class="arm-card" style="--ac:#38bdf8">
+        <div class="arm-icon">⚡</div>
+        <h3>CashCaboose <b>Pay</b></h3>
+        <p>Direct settlement for <b>electricity, water, internet, TV &amp; airtime</b>. Pay from your wallet or request a float-backed settlement.</p>
+        <ul><li>Instant confirmation</li><li>Receipts on every payment</li><li>Bill reminders</li></ul>
+      </article>
+      <article class="arm-card" style="--ac:#34d399">
+        <div class="arm-icon">🛒</div>
+        <h3>CashCaboose <b>Co</b></h3>
+        <p>Buy-now-pay-later on <b>groceries, fuel vouchers &amp; household essentials</b>. Order today, spread the cost across your next paydays.</p>
+        <ul><li>0% interest on essentials</li><li>Flexible installments</li><li>Doorstep drop in partner zones</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <h2 class="sec-title">How it works</h2>
+    <div class="how-grid">
+      <div class="how-step"><span>01</span><h4>Sign in</h4><p>Customers pick a demo profile; managers unlock the ops console.</p></div>
+      <div class="how-step"><span>02</span><h4>Request</h4><p>Apply for a loan, settle a bill, or order essentials — all tracked live.</p></div>
+      <div class="how-step"><span>03</span><h4>Review</h4><p>Managers approve, log payments and keep every float above its safe line.</p></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 CashCaboose Capital · Demo build · Terms shown in-app</span>
+    <button class="linklike" data-terms>View platform terms</button>
+  </footer>
+</main>
+
+<!-- ===== PORTAL GATE ===== -->
+<main id="view-portal" class="hidden">
+  <section class="gate">
+    <h2 class="sec-title">Choose your portal</h2>
+    <p class="sec-sub">Same platform, two sides of the ledger.</p>
+    <div class="gate-grid">
+      <button class="gate-card" data-login="customer">
+        <div class="gate-icon c1">👤</div>
+        <h3>Customer portal</h3>
+        <p>Request support, view terms, track balances, loans, bills &amp; orders.</p>
+        <span class="gate-cta">Enter as customer →</span>
+      </button>
+      <button class="gate-card" data-login="manager">
+        <div class="gate-icon c2">🛠</div>
+        <h3>Manager console</h3>
+        <p>Review requests, log payments, watch float health, manage the arms.</p>
+        <span class="gate-cta">Enter as manager →</span>
+      </button>
+    </div>
+  </section>
+</main>
+
+<!-- ===== CUSTOMER PORTAL ===== -->
+<main id="view-customer" class="hidden">
+  <header class="dash-top">
+    <div>
+      <span class="pill dark"><span class="dot"></span> Customer portal</span>
+      <h2 id="cust-name">Hello</h2>
+    </div>
+    <div class="dash-actions">
+      <button class="btn btn-ghost" data-terms>Terms</button>
+      <button class="btn btn-outline" data-logout>Sign out</button>
+    </div>
+  </header>
+
+  <section class="balance-strip" id="cust-balances"></section>
+
+  <nav class="tabs" id="cust-tabs">
+    <button class="tab active" data-tab="overview">Overview</button>
+    <button class="tab" data-tab="finance">💰 Finance</button>
+    <button class="tab" data-tab="pay">⚡ Pay</button>
+    <button class="tab" data-tab="co">🛒 Co</button>
+    <button class="tab" data-tab="support">🎧 Support</button>
+  </nav>
+
+  <section class="tab-panel" id="tab-overview">
+    <div class="panel-grid">
+      <div class="panel">
+        <h4>Recent activity</h4>
+        <div id="cust-activity" class="feed"></div>
+      </div>
+      <div class="panel">
+        <h4>Open requests</h4>
+        <div id="cust-requests" class="feed"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tab-panel hidden" id="tab-finance">
+    <div class="panel-grid">
+      <div class="panel">
+        <h4>Request a micro-loan</h4>
+        <form id="loan-form" class="form">
+          <label>Amount (₦)
+            <input type="number" id="loan-amt" min="5000" max="150000" step="1000" value="20000" required>
+          </label>
+          <label>Term
+            <select id="loan-term"><option value="30">30 days</option><option value="60">60 days</option><option value="90">90 days</option></select>
+          </label>
+          <label>Purpose
+            <input type="text" id="loan-purpose" placeholder="e.g. Stock for my shop" required>
+          </label>
+          <p class="hint" id="loan-preview"></p>
+          <button class="btn btn-gold" type="submit">Submit for review</button>
+        </form>
+      </div>
+      <div class="panel">
+        <h4>My loans</h4>
+        <div id="cust-loans" class="feed"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tab-panel hidden" id="tab-pay">
+    <div class="panel-grid">
+      <div class="panel">
+        <h4>Settle a bill</h4>
+        <form id="bill-form" class="form">
+          <label>Bill type
+            <select id="bill-type"><option>Electricity</option><option>Water</option><option>Internet</option><option>TV subscription</option><option>Airtime / Data</option></select>
+          </label>
+          <label>Provider / meter no.
+            <input type="text" id="bill-ref" placeholder="e.g. IKEDC · 0455 123 987" required>
+          </label>
+          <label>Amount (₦)
+            <input type="number" id="bill-amt" min="100" step="50" value="5000" required>
+          </label>
+          <p class="hint">Settled directly from the Pay float · instant receipt</p>
+          <button class="btn btn-gold" type="submit">Settle bill</button>
+        </form>
+      </div>
+      <div class="panel">
+        <h4>Payment history</h4>
+        <div id="cust-bills" class="feed"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tab-panel hidden" id="tab-co">
+    <div class="panel-grid">
+      <div class="panel">
+        <h4>Essentials catalogue</h4>
+        <div id="co-catalog" class="catalog"></div>
+      </div>
+      <div class="panel">
+        <h4>My orders</h4>
+        <div id="cust-orders" class="feed"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tab-panel hidden" id="tab-support">
+    <div class="panel-grid">
+      <div class="panel">
+        <h4>Request support</h4>
+        <form id="support-form" class="form">
+          <label>Topic
+            <select id="sup-topic"><option>Loan question</option><option>Bill not reflecting</option><option>Order issue</option><option>Wallet &amp; repayments</option><option>Something else</option></select>
+          </label>
+          <label>Message
+            <textarea id="sup-msg" rows="4" placeholder="Tell us what's going on…" required></textarea>
+          </label>
+          <button class="btn btn-gold" type="submit">Send to support</button>
+        </form>
+      </div>
+      <div class="panel">
+        <h4>My tickets</h4>
+        <div id="cust-tickets" class="feed"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== MANAGER CONSOLE ===== -->
+<main id="view-manager" class="hidden">
+  <header class="dash-top">
+    <div>
+      <span class="pill dark"><span class="dot amber"></span> Manager console</span>
+      <h2>Operations desk</h2>
+    </div>
+    <div class="dash-actions">
+      <button class="btn btn-outline" data-logout>Sign out</button>
+    </div>
+  </header>
+
+  <section class="float-grid" id="float-grid"></section>
+
+  <nav class="tabs" id="mgr-tabs">
+    <button class="tab active" data-mtab="queue">Review queue</button>
+    <button class="tab" data-mtab="payments">Log payment</button>
+    <button class="tab" data-mtab="ledger">Ledger</button>
+    <button class="tab" data-mtab="tickets">Tickets</button>
+  </nav>
+
+  <section class="tab-panel" id="mtab-queue">
+    <div class="panel">
+      <h4>Pending requests</h4>
+      <div id="mgr-queue" class="feed"></div>
+    </div>
+  </section>
+
+  <section class="tab-panel hidden" id="mtab-payments">
+    <div class="panel-grid">
+      <div class="panel">
+        <h4>Log a repayment / top-up</h4>
+        <form id="paylog-form" class="form">
+          <label>Type
+            <select id="plog-type"><option value="repayment">Loan repayment</option><option value="topup">Wallet top-up</option><option value="orderpay">Order installment</option></select>
+          </label>
+          <label>Customer
+            <select id="plog-cust"></select>
+          </label>
+          <label>Reference (optional)
+            <input type="text" id="plog-ref" placeholder="Transfer ref / receipt no.">
+          </label>
+          <label>Amount (₦)
+            <input type="number" id="plog-amt" min="100" step="50" required>
+          </label>
+          <button class="btn btn-gold" type="submit">Log payment</button>
+        </form>
+      </div>
+      <div class="panel">
+        <h4>Logged payments</h4>
+        <div id="mgr-paylog" class="feed"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tab-panel hidden" id="mtab-ledger">
+    <div class="panel">
+      <h4>Full ledger</h4>
+      <div id="mgr-ledger" class="feed"></div>
+    </div>
+  </section>
+
+  <section class="tab-panel hidden" id="mtab-tickets">
+    <div class="panel">
+      <h4>Support tickets</h4>
+      <div id="mgr-tickets" class="feed"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== TERMS MODAL / TOAST ===== -->
+<div class="modal hidden" id="terms-modal">
+  <div class="modal-card">
+    <h3>Platform terms &amp; pricing</h3>
+    <ul class="terms-list">
+      <li><b>Finance:</b> flat 8% service fee on the approved amount, disclosed before you accept. Late repayment attracts a 2% weekly penalty on the outstanding balance.</li>
+      <li><b>Pay:</b> bill settlement is free for wallets in good standing. A ₦50 processing fee applies to float-backed settlements for overdue wallets.</li>
+      <li><b>Co:</b> 0% interest on essentials. Orders split into up to 4 installments; missed installments pause new orders until caught up.</li>
+      <li><b>Floats:</b> customer balances are held in ring-fenced floats per arm, reviewed daily, and never lent out.</li>
+      <li><b>Privacy:</b> demo build — data lives in your browser's localStorage only.</li>
+    </ul>
+    <button class="btn btn-gold" data-close-terms>Got it</button>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
